@@ -29,7 +29,10 @@ namespace BookStore.API
         {
             services.AddDbContext<DataContext>(x => x.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
             services.AddControllers();
+            //to avoid conflicts between two app sharing same server web Api and Angular
             services.AddCors();
+            //registering interface to the servise
+            services.AddScoped<IAuthRepository, AuthRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

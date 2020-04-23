@@ -1,4 +1,4 @@
-using BookStore.API.Controllers.Models;
+using BookStore.API.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace BookStore.API.Data
@@ -10,5 +10,6 @@ namespace BookStore.API.Data
         }
 
         public DbSet<Value> Values { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }

@@ -1,4 +1,4 @@
-namespace BookStore.API.Controllers.Models
+namespace BookStore.API.Models
 {
     public class Value
     {
