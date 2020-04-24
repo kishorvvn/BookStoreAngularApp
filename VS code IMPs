@@ -3,3 +3,9 @@ then attach process by hitting .net attach
 select api name.exe (BookStore.Api.exe)
 break point will highlight as red. This indicates that the file is attached for debuging.
 Otherwise breakpoint will be hollow circle indicating file is not attached for debugging.
+_____________________________________________________________________________________________________
+Token for JWT
+
+"AppSettings": {
+    // token or key has to be extreemly long and of random characters as it will be hard to decode 
+    "Token": "this is a super secret key"
